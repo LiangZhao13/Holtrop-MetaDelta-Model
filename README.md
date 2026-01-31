@@ -78,6 +78,9 @@ df_merged = df_true.merge(
     how="left"
 )
 ```
+
+---
+
 ### ✅ Results preview
 
 | Vessel ID | date       | fuel_true_day | emission_true_day | emission_predict_day |
@@ -104,26 +107,15 @@ df_merged = df_true.merge(
 | 2 | 2023-09-04 | 51.49 | 162.1935 | 159.805263 |
 | 2 | 2023-10-13 | 53.24 | 167.7060 | 164.445844 |
 
+## Contact
+
+If you have any questions, suggestions, or would like to discuss potential collaboration, please feel free to contact:
+
+**Dr. Liang Zhao**  
+📧 Email: liamzhao13@zju.edu.cn
+
+## License
+
+This project is licensed under the **MIT License**.
 
 
-## 📁 Repository Structure
-
-```text
-.
-├── inference/                  # Inference pipeline for added resistance (R_added) prediction
-│   └── radded_predictor.py
-├── models/                     # Model definitions (TabNet wrapper, MetaNet, etc.)
-│   └── stacked_models.py
-├── train/                      # Training scripts for ensemble learning models
-│   └── train.py
-├── Modellib/                   # Trained model files
-│   ├── xgb_model.pkl
-│   ├── catboost_model.pkl
-│   ├── tabnet_model.pkl
-│   ├── tabpfn_model.pkl
-│   ├── meta_model.pth
-│   └── scaler_inference.pkl
-├── validation_data_55.csv      # Validation dataset (55 days of AIS data from COSCO)
-├── MRV_true.csv                # Ground-truth daily fuel consumption and CO₂ emissions (MRV-based, COSCO)
-├── Test_sample.ipynb           # Example notebook demonstrating the full pipeline
-└── README.md
