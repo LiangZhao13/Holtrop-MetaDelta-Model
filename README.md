@@ -31,10 +31,18 @@ The workflow consists of three main stages:
 
 ## 🚀 Quick Start: Inference Pipeline
 
-### 1️⃣ Predict Added Resistance
+### 1️⃣ Predict Calm Water and Added Resistance
 
 ```python
 from inference.radded_predictor import predict_r_added_from_dir
+from models.class_calm_water_resistance_estimatoin import *
+import pandas as pd
+
+df = pd.read_csv('validation_data_55.csv')
+
+# Compute calm-water resistance (unit: kN) for each record
+# Cal_R_calm is a user-defined function
+df['R_calm'] = df.apply(Cal_R_calm, axis=1)  # kN
 
 feature_cols = [
     'SOG', 'heading', 'draught',
