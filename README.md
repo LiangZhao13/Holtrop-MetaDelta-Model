@@ -40,8 +40,6 @@ import pandas as pd
 
 df = pd.read_csv('validation_data_55.csv')
 
-# Compute calm-water resistance (unit: kN) for each record
-# Cal_R_calm is a user-defined function
 df['R_calm'] = df.apply(Cal_R_calm, axis=1)  # kN
 
 feature_cols = [
