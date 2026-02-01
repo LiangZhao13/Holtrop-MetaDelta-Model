@@ -89,6 +89,8 @@ df_merged = df_true.merge(
 
 ### ✅ Results preview
 
+We select 55 days of MRV recordings of 2 container vessels from COSCO as the test sample, part of the results are shown below.  
+
 | Vessel ID | date       | fuel_true_day | emission_true_day | emission_predict_day |
 |-----------|------------|---------------|-------------------|----------------------|
 | 1 | 2021-09-23 | 71.43 | 225.0045 | 216.386105 |
