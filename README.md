@@ -115,12 +115,6 @@ We select 55 days of MRV recordings of 2 container vessels from COSCO as the tes
 | 2 | 2023-09-04 | 51.49 | 162.1935 | 159.805263 |
 | 2 | 2023-10-13 | 53.24 | 167.7060 | 164.445844 |
 
-## Contact
-
-If you have any questions, suggestions, or would like to discuss potential collaboration, please feel free to contact:
-
-**Dr. Liang Zhao**  
-📧 Email: liamzhao13@zju.edu.cn
 
 ## License
 
